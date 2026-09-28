@@ -1,0 +1,6 @@
+### Secrets & junk (append to .gitignore) ###
+.env
+*.war
+*.war.original
+.txt
+.target/

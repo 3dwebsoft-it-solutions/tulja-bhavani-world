@@ -1,0 +1,40 @@
+services:
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_NAME:-TuljaBhavaniWorld}
+      MYSQL_USER: ${DB_USERNAME:-appuser}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-appsecret}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-rootsecret}
+    ports:
+      - "127.0.0.1:3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_ROOT_PASSWORD:-rootsecret}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: ${DB_NAME:-TuljaBhavaniWorld}
+      DB_USERNAME: ${DB_USERNAME:-appuser}
+      DB_PASSWORD: ${DB_PASSWORD:-appsecret}
+      MAIL_USERNAME: ${MAIL_USERNAME:-contact@3dwebsoftitsolutions.com}
+      MAIL_PASSWORD: ${MAIL_PASSWORD:-}
+      MANAGER_EMAIL: ${MANAGER_EMAIL:-info@3dwebsoftitsolutions.com}
+      HR_EMAIL: ${HR_EMAIL:-hr@3dwebsoftitsolutions.com}
+    ports:
+      - "127.0.0.1:8081:8080"
+
+volumes:
+  mysql_data:

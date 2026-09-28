@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #4f9a9a 0%, #eef4f1 100%);
+    color: #173b2f;
+    line-height: 1.6;
+}
+
+/* =========================================
+   HOME IMAGES
+========================================= */
+
+.home-slide-image {
+    width: 45vw;
+    max-width: 650px;
+    height: 240px;
+    object-fit: cover;
+    display: inline-block;
+    border-radius: 14px;
+}
+
+.home-main-image {
+    display: block;
+    width: 95%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto 30px;
+    border-radius: 18px;
+    box-shadow: 0 12px 24px rgba(9, 35, 31, 0.12);
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .home-slide-image {
+        width: 70vw;
+        height: 180px;
+    }
+
+    .home-main-image {
+        width: 94%;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .home-slide-image {
+        width: 85vw;
+        height: 150px;
+    }
+
+    .home-main-image {
+        width: 96%;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+.mainDiv {
+    background-color: teal;
+    color: white;
+    margin: 0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.mainDiv h1 {
+    font-size: clamp(26px, 4vw, 45px);
+}
+
+.mainDiv h3 {
+    font-size: clamp(22px, 3vw, 32px);
+}
+
+.mainDiv h4 {
+    color: yellow;
+    font-size: clamp(18px, 2vw, 26px);
+}
+
+.mainDiv h5 {
+    color: white;
+    font-size: clamp(14px, 2vw, 18px);
+    line-height: 1.6;
+}
+
+
+@media (max-width: 480px) {
+
+    .mainDiv {
+        padding: 45px 15px;
+    }
+
+}
+
+
+
+
+
+
+.mainDiv h1 {
+    font-size: clamp(26px, 4vw, 45px);
+    /* color: #ffffff;
+    margin-bottom: 12px;
+    font-weight: 700; */
+}
+
+
+marquee {
+    background: #ffffff;
+    padding: 18px 0;
+    border-top: 4px solid #f7d66a;
+    border-bottom: 4px solid #dfeeea;
+}
+
+marquee img {
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(19, 39, 33, 0.15);
+}
+
+h2 {
+    text-align: center;
+    padding: 34px 16px 16px;
+}
+
+h2 a {
+    color: #0b4d42;
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+h2 a u {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+
+
+@media (max-width: 768px) {
+    .mainDiv {
+        padding: 70px 16px 50px;
+    }
+
+    .mainDiv h4 {
+        font-size: 1.3rem;
+    }
+
+    marquee img {
+        max-height: 160px;
+    }
+}
+

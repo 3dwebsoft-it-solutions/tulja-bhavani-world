@@ -1,0 +1,7 @@
+target/
+.git/
+.env
+.settings/
+.classpath
+.project
+*.war

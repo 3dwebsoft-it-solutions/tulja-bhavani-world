@@ -1,0 +1,391 @@
+/* =================================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* ===============================
+   HTML and Body
+================================= */
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+/* =================================
+   HEADER
+================================= */
+.header {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 25px;
+
+    background: rgb(84, 167, 167);
+
+    box-shadow: 0 2px 8px rgb(255, 255, 0);
+
+    position: relative;
+    z-index: 1100;
+    isolation: isolate;
+    
+}
+
+/* =================================
+   LOGO
+================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    color: white;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =================================
+   TOGGLE BUTTON
+================================= */
+
+.toggle-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    font-size: 30px;
+
+    background: transparent;
+
+    border: none;
+
+    color: rgb(255, 255, 0);
+
+    cursor: pointer;
+
+    padding: 0;
+
+    z-index: 1100;
+}
+
+.toggle-btn:focus {
+    outline: none;
+}
+
+
+/* =================================
+   OLD HORIZONTAL MENU
+================================= */
+
+/*
+   We are using the hamburger menu,
+   so hide the old NavMenu.
+*/
+
+.NavMenu {
+    display: none !important;
+}
+
+
+/* =================================
+   OFF-CANVAS MENU
+================================= */
+
+.nav-menu {
+    position: fixed;
+
+    top: 0;
+
+    right: -350px;
+
+    width: 350px;
+    max-width: 85vw;
+	height: 100vh;
+	
+    height: 100dvh;
+
+    background: teal;
+
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+
+    padding: 85px 0 20px 0;
+
+    margin: 0;
+
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+
+    transition: right 0.35s ease-in-out;
+
+    z-index: 1050;
+
+    overflow-y: auto;
+}
+
+
+/* =================================
+   OPEN MENU
+================================= */
+
+.nav-menu.active {
+    right: 0;
+}
+
+
+/* =================================
+   MENU ITEMS
+================================= */
+
+.nav-menu.active {
+    right: 0;
+}
+
+.nav-menu li {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    list-style: none;
+}
+
+
+/* =================================
+   MENU LINKS
+================================= */
+
+.nav-menu a {
+    display: block;
+
+    width: 100%;
+
+    padding: 15px 25px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+
+
+/* =================================
+   MENU HOVER
+================================= */
+
+.nav-menu a:hover {
+    background: rgba(255, 255, 255, 0.15);
+
+    color: yellow;
+
+    text-decoration: none;
+
+    padding-left: 32px;
+}
+
+
+/* =================================
+   OVERLAY
+================================= */
+
+.overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 1040;
+}
+
+
+/* =================================
+   ACTIVE OVERLAY
+================================= */
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        height: 68px;
+
+        padding: 6px 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .toggle-btn {
+        width: 42px;
+        height: 42px;
+
+        font-size: 27px;
+    }
+
+    .nav-menu {
+        width: 300px;
+        max-width: 85vw;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+    .header {
+        height: 65px;
+
+        padding: 5px 12px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .toggle-btn {
+        width: 40px;
+        height: 40px;
+
+        font-size: 25px;
+    }
+
+    .nav-menu {
+        width: 280px;
+        max-width: 85vw;
+
+        padding-top: 75px;
+    }
+
+    .nav-menu a {
+        padding: 15px 20px;
+
+        font-size: 15px;
+    }
+
+    .nav-menu a:hover {
+        padding-left: 27px;
+    }
+}
+
+
+/* =================================
+   VERY SMALL MOBILE
+================================= */
+
+@media (max-width: 360px) {
+
+    .header {
+        height: 60px;
+
+        padding: 5px 10px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .toggle-btn {
+        font-size: 23px;
+    }
+
+    .nav-menu {
+        width: 270px;
+        max-width: 88vw;
+    }
+}

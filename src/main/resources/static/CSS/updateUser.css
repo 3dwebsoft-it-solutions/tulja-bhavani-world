@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, rgb(0, 128, 128), #764ba2);
+    min-height: 100vh;
+}
+
+
+.update-page { min-height: calc(100vh - 70px);
+ display: flex; justify-content: center; 
+ align-items: center; 
+ padding: 40px 20px; 
+ }
+
+.container {
+    width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.form-group > label { 
+	display: block; 
+	margin-bottom: 7px; 
+	font-weight: bold; 
+	color: #444;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #444;
+}
+
+.gender { 
+	display: flex; 
+	align-items: center; 
+	gap: 10px; 
+	}
+
+.gender label { 
+	display: inline; 
+	margin: 0; 
+	font-weight: normal; 
+	} 
+	
+.gender input[type="radio"] { 
+	width: auto; 
+	}
+
+
+input,
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+input[readonly] {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 11px 25px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.update-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.update-btn:hover {
+    background-color: #218838;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #c82333;
+}
