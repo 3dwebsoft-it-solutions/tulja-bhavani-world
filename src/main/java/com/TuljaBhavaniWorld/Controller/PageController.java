@@ -11,16 +11,37 @@ public class PageController {
 	@GetMapping("/")
 	public ModelAndView openLoginPage() {
 
-		return new ModelAndView("Login");
+		return new ModelAndView("Home");
 	}
 
+	@GetMapping("/login")
+	public String loginPage() {
+	    return "Login";
+	}
+	
 	@GetMapping(value = "/home")
 	public String homePage() {
 
 		return "Home";
 
 	}
+	
+	@GetMapping(value = "/adminLogin")
+	public String adminLogin() {
 
+		return "AdminLogin";
+
+	}
+
+	
+	@GetMapping(value = "/dashboard")
+	public String AdminDashboard() {
+
+		return "AdminDashboard";
+
+	}
+	
+		
 	@GetMapping(value = "/menu")
 	public String menuPage() {
 		return "Menu";

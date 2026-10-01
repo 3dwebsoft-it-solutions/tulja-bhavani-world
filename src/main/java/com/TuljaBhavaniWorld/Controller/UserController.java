@@ -90,12 +90,14 @@ public class UserController {
 	public String getAllUsers(Model model) {
 		List<User> users = userService.getAllUsers();
 
-		model.addAttribute("user", users);
+		model.addAttribute("users", users);
 
 		return "ListOfUsers";
 
 	}
 
+
+	
 	@PostMapping("/deleteUserById/{id}")
 	public ModelAndView deleteUserById(@PathVariable Long id, RedirectAttributes redirectAttributes) {
 

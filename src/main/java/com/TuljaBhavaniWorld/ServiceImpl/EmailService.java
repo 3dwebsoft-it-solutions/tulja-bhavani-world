@@ -1,6 +1,6 @@
 package com.TuljaBhavaniWorld.ServiceImpl;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -12,11 +12,14 @@ import com.TuljaBhavaniWorld.Entity.RequestPrice;
 @Service
 public class EmailService {
 
-	@Autowired
-	private JavaMailSender mailSender;
+	private final JavaMailSender mailSender;
 
 	@Value("${manager.email}")
 	private String managerEmail;
+
+	EmailService(JavaMailSender mailSender) {
+		this.mailSender = mailSender;
+	}
 
 	public void sendContactMessage(ContactMessage contact) {
 

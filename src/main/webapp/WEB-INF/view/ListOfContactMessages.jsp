@@ -91,7 +91,8 @@
 
 							<td><c:out value="${list.phoneNumber}" /></td>
 
-							<td><c:if test="${sessionScope.user.role=='ADMIN'}">
+							<td>
+							
 
 									<form action="/deleteContactMessageById/${list.id}"
 										method="post" style="display: inline;"
@@ -100,7 +101,7 @@
 										<button type="submit" class="btn btn-danger">Delete</button>
 
 									</form>
-								</c:if></td>
+							</td>
 
 						</tr>
 

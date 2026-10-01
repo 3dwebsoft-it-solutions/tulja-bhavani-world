@@ -66,7 +66,7 @@
 
 					<tr>
 						<td>1</td>
-						<td class="job-title">Full Stack Developer</td>
+						<td class="job-title">Deployment Head</td>
 						<td>Hyderabad</td>
 						<td>0-5 years</td>
 						<td>5</td>
@@ -76,7 +76,7 @@
 
 					<tr>
 						<td>2</td>
-						<td class="job-title">Frontend Developer</td>
+						<td class="job-title">Electrical Engineer</td>
 						<td>Hyderabad</td>
 						<td>0-5 years</td>
 						<td>5</td>
@@ -86,7 +86,7 @@
 
 					<tr>
 						<td>3</td>
-						<td class="job-title">Backend Developer</td>
+						<td class="job-title">Civil Engineer</td>
 						<td>Hyderabad</td>
 						<td>0-5 years</td>
 						<td>5</td>
@@ -96,37 +96,38 @@
 
 					<tr>
 						<td>4</td>
-						<td class="job-title">Mobile App Developer</td>
+						<td class="job-title">Mechanical Engineer</td>
 						<td>Hyderabad</td>
 						<td>0-5 years</td>
 						<td>5</td>
 						<td>Full-time</td>
 						<td><a href="contactMessage">Apply here</a></td>
 					</tr>
-
+					
 					<tr>
-						<td>5</td>
-						<td class="job-title">AI & Machine Learning Trainer</td>
+						<td>4</td>
+						<td class="job-title">Mechanical Engineer</td>
 						<td>Hyderabad</td>
 						<td>0-5 years</td>
 						<td>5</td>
 						<td>Full-time</td>
 						<td><a href="contactMessage">Apply here</a></td>
 					</tr>
-
+					
+					
 					<tr>
-						<td>6</td>
-						<td class="job-title">IT Trainer</td>
+						<td>4</td>
+						<td class="job-title">Project Engineer</td>
 						<td>Hyderabad</td>
 						<td>0-5 years</td>
 						<td>5</td>
 						<td>Full-time</td>
 						<td><a href="contactMessage">Apply here</a></td>
 					</tr>
-
+					
 					<tr>
-						<td>7</td>
-						<td class="job-title">Digital Marketing Executive</td>
+						<td>4</td>
+						<td class="job-title">ArchiTect Engineer</td>
 						<td>Hyderabad</td>
 						<td>0-5 years</td>
 						<td>5</td>
@@ -134,16 +135,7 @@
 						<td><a href="contactMessage">Apply here</a></td>
 					</tr>
 
-					<tr>
-						<td>8</td>
-						<td class="job-title">Digital Marketing Trainer</td>
-						<td>Hyderabad</td>
-						<td>0-5 years</td>
-						<td>5</td>
-						<td>Full-time</td>
-						<td><a href="contactMessage">Apply here</a></td>
-					</tr>
-
+					
 				</tbody>
 
 			</table>

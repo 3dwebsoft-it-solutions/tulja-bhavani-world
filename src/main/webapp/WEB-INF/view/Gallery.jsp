@@ -18,7 +18,7 @@
 
 	<div class="gallery-container">
 
-			<img src="Gallery/AllKindsOfMaterials.jpeg" alt="Gallery Image">
+			<img src="Gallery/allKindsOfMaterials.jpeg" alt="Gallery Image">
 			<img src="Gallery/bricks.jpeg" alt="Gallery Image"> 
 			<img src="Gallery/doors.jpeg" alt="Gallery Image">
 			<img src="Gallery/dust1.jpeg" alt="Gallery Image">
@@ -38,8 +38,6 @@
 			<img src="Gallery/steel1.jpeg" alt="Gallery Image">
 			<img src="Gallery/tiles.jpeg" alt="Gallery Image">
 			<img src="Gallery/watersupply.jpeg" alt="Gallery Image">
-			<img src="Gallery/weSupply1.jpeg" alt="Gallery Image">
-			<img src="Gallery/weSupply2.jpeg" alt="Gallery Image">
 			<img src="Gallery/wood1.jpeg" alt="Gallery Image">
 			
 			

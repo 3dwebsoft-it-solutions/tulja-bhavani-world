@@ -11,8 +11,11 @@ import com.TuljaBhavaniWorld.Entity.RequestPrice;
 @Service
 public class RequestPriceService {
 
-	@Autowired
-	private RequestPriceRepository requestPriceRepository;
+	private final RequestPriceRepository requestPriceRepository;
+
+	RequestPriceService(RequestPriceRepository requestPriceRepository) {
+		this.requestPriceRepository = requestPriceRepository;
+	}
 
 	public RequestPrice saveMessage(RequestPrice requestPrice) {
 

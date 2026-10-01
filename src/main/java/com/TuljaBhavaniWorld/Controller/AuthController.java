@@ -1,9 +1,8 @@
 package com.TuljaBhavaniWorld.Controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -15,8 +14,11 @@ import jakarta.servlet.http.HttpSession;
 @Controller
 public class AuthController {
 
-	@Autowired
-	private AuthService authService;
+	private final AuthService authService;
+
+	AuthController(AuthService authService) {
+		this.authService = authService;
+	}
 
 	@PostMapping(value = "/loginProcess")
 
@@ -30,15 +32,22 @@ public class AuthController {
 			session.setAttribute("user", user);
 
 			if ("ADMIN".equalsIgnoreCase(user.getRole())) {
-				return "Home";
+				
+				System.out.println("AuthController.loginProcess called");
+				
+				return "redirect:/dashboard";
 			}
 
 			if ("EMPLOYEE".equalsIgnoreCase(user.getRole())) {
-				return "Home";
+				System.out.println("AuthController.loginProcess called");
+				
+				return "redirect:/Home";
 			}
 
 			if ("USER".equalsIgnoreCase(user.getRole())) {
-				return "Home";
+				
+				System.out.println("AuthController.loginProcess called");
+				return "redirect:/Home";
 			}
 
 			model.addAttribute("msg", "Invalid user role.");
@@ -46,7 +55,7 @@ public class AuthController {
 
 		} else {
 
-			model.addAttribute("msg", "Invalid Credential.");
+			model.addAttribute("msg", "Invalid Credential, Enter Valid Admin username and password.");
 			return "Login";
 		}
 	}

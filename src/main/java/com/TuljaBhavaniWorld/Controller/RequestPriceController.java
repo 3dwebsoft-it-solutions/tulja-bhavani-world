@@ -20,21 +20,21 @@ import com.TuljaBhavaniWorld.ServiceImpl.RequestPriceService;
 @Controller
 public class RequestPriceController {
 
-	@Autowired
-	private RequestPriceService requestPriceService;
+	private final RequestPriceService requestPriceService;
 
-	@Autowired
-	private EmailService emailService;
+	RequestPriceController(RequestPriceService requestPriceService) {
+		this.requestPriceService = requestPriceService;
+	}
+
+	
 
 	@PostMapping("/requestPrice")
 	public String requestPrice(@ModelAttribute RequestPrice requestPrice) {
 
 		// save request
 		RequestPrice saveMessage = requestPriceService.saveMessage(requestPrice);
-
-		// send email
-		emailService.requestPrice(saveMessage);
-
+		
+		
 		return "redirect:/requestPrice?success=true";
 	}
 

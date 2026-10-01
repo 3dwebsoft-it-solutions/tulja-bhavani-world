@@ -26,7 +26,7 @@
 	<section class="ourteam-section" id="ourteam">
 
 		<div class="section-title">
-			<h2>Board of Directors</h2>
+			<h3>Board of Directors</h3>
 			<p>The leadership guiding 3DWebSoft.INC IT Solutions' vision and
 				growth</p>
 		</div>
@@ -49,39 +49,10 @@
 				</div>
 			</div>
 
-			<!-- Project 2 -->
-
-			<div class="ourteam-card">
-				<div class="ourteam-image">
-					<img src="Gallery/ourTeam/asha_mam.png" alt="Hospital MEP Project">
-				</div>
-
-				<div class="ourteam-content">
-					<span class="ourteam-category">Asha Rathod</span>
-					<h3>Finance Head</h3>
-					<p>Handles financial planning, budgeting, and overall financial
-						management.</p>
-
-				</div>
-			</div>
+			
 
 
-			<!-- Project 3 -->
-			<div class="ourteam-card">
-				<div class="ourteam-image">
-					<img src="Gallery/ourTeam/anuradha_mam.png"
-						alt="Hospital MEP Project">
-				</div>
-
-				<div class="ourteam-content">
-					<span class="ourteam-category">Anuradha Devanabonia</span>
-					<h3>Director</h3>
-					<p>Leads strategic planning and manages key business functions.
-					</p>
-
-				</div>
-			</div>
-
+			
 			<!-- Project 4 -->
 			<div class="ourteam-card">
 				<div class="ourteam-image">
@@ -97,38 +68,6 @@
 				</div>
 			</div>
 
-			<!-- Project 5 -->
-			<div class="ourteam-card">
-				<div class="ourteam-image">
-					<img src="Gallery/ourTeam/bharath_sir.jpeg"
-						alt="Hospital MEP Project">
-				</div>
-
-				<div class="ourteam-content">
-					<span class="ourteam-category">Bharath Rathod</span>
-					<h3>Senior Software Developer</h3>
-					<p>Leading the design and development of scalable software
-						solutions while mentoring developers and delivering high-quality
-						applications.</p>
-
-				</div>
-			</div>
-
-			<!-- Project 6 -->
-			<div class="ourteam-card">
-				<div class="ourteam-image">
-					<img src="Gallery/ourTeam/aniketh.jpeg" alt="Hospital MEP Project">
-				</div>
-
-				<div class="ourteam-content">
-					<span class="ourteam-category">Aniket Kamlekar</span>
-					<h3>Manager and java Full Stack Developer</h3>
-					<p>Leading the design and development of scalable software
-						solutions while mentoring developers and delivering high-quality
-						applications.</p>
-
-				</div>
-			</div>
 		</div>
 
 	</section>

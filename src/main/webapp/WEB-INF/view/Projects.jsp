@@ -132,22 +132,5 @@
 </html>
 
 
-<style>
-.mainDiv {
-	background-color: teal;
-	color: white;
-	margine: 0px;
-	padding: 80px;
-	text-align: center;
-}
-
-h5 {
-	color: white;
-}
-
-h4 {
-	color: yellow;
-}
-</style>
 
 

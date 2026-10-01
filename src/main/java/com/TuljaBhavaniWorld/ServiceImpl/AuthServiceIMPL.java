@@ -10,8 +10,12 @@ import com.TuljaBhavaniWorld.Service.AuthService;
 @Service
 public class AuthServiceIMPL implements AuthService {
 
-	@Autowired
-	private AuthDao authDao;
+
+	private final AuthDao authDao;
+	
+	AuthServiceIMPL(AuthDao authDao){
+		this.authDao=authDao;
+	}
 
 	@Override
 	public User loginProcess(String email, String password) {
@@ -30,10 +34,10 @@ public class AuthServiceIMPL implements AuthService {
 		}
 	}
 
-	@Override
-	public String updateUser(User user) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+//	@Override
+//	public String updateUser(User user) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
 
 }

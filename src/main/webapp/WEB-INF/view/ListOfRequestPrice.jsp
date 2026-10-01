@@ -90,8 +90,7 @@
 
 							<td class="action-column">
 							
-								<c:if
-									test="${sessionScope.user.role =='ADMIN' }">
+							
 
 									<a href="/updateRequestPriceById/${requestPrice.id}"
 										class="btn btn-success"> Edit </a> |
@@ -106,7 +105,7 @@
 
 									</form>
 
-								</c:if>
+							
 								</td>
 							</tr>
 

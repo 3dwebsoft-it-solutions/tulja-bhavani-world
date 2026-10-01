@@ -131,19 +131,20 @@
 				<div class="col-md-5 col-lg-4 ml-lg-0 footer-social">
 					<!-- Facebook -->
 					<a style="border-radius: 30px;"
-						href="https://www.facebook.com/people/3dwebsoftitsolutions/61592302205333/?rdid=KH9d0ufjhiVQ6G42&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17eHX7DZyg%2F"
+						href="https://www.facebook.com/people/3dwebsoftitsolutions/61592302205333/?rdid=Xv7KckJmB8rWS84X&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17eHX7DZyg%2F"
 						target="_blank"
 						class="btn btn-outline-light btn-floating m-1 text-white"
 						role="button"> 
 						<i class="fab fa-facebook-f"></i>Facebook
 					</a>
 
-					<!-- Twitter -->
-					<a style="border-radius: 30px;" href="https://x.com/"
+					<!-- LinkedIn -->
+					<a style="border-radius: 30px;" 
+						href="https://www.linkedin.com/company/3dwebsoft-it-solutions/?original_referer=https%3A%2F%2Fwww.futuretechschool.online%2F"
 						target="_blank"
 						class="btn btn-outline-light btn-floating m-1 text-white"
 						role="button"> 
-						<i class="fab fa-twitter"></i>Twitter
+						<i class="fab fa-linkedIn"></i>LinkedIn
 					</a>
 
 					<!-- Google -->

@@ -132,7 +132,7 @@
         <!-- PRODUCT 4 -->
         <div class="product-card">
 
-            <img src="Gallery/Services/BulkMs.jpg"
+            <img src="Gallery/Services/BulkMS.jpg"
                  alt="Bulk Material Supply">
 
             <div class="product-content">

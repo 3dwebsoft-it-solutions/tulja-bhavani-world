@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+/* =========================================
+   TBW FOOTER
+========================================= */
+
+.twb-footer {
+    width: 100%;
+    background-color: rgb(78, 154, 154);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.twb-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.twb-footer a:hover {
+    color: rgb(0, 255, 64);
+    text-decoration: underline;
+}
+
+
+/* Footer columns */
+
+.footer-column {
+    margin-bottom: 25px;
+}
+
+.footer-column h6 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    line-height: 1.7;
+}
+
+
+/* Footer description */
+
+.footer-description {
+    text-align: left;
+    line-height: 1.7;
+}
+
+
+/* Contact */
+
+.footer-contact {
+    text-align: left;
+}
+
+.footer-contact p {
+    margin-bottom: 12px;
+}
+
+
+/* Footer divider */
+
+.twb-footer hr {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Disclaimer */
+
+.footer-disclaimer {
+    text-align: center;
+    line-height: 1.6;
+    margin: 15px auto;
+    max-width: 1000px;
+}
+
+
+/* Social buttons */
+
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.footer-social a {
+    border-radius: 30px !important;
+    margin: 3px !important;
+    min-width: 95px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer-social a:hover {
+	
+	color:#00ff40;
+	
+	}
+
+
+/* Copyright */
+
+.footer-copyright {
+    text-align: center;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .twb-footer {
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 30px;
+    }
+
+    .footer-description,
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .twb-footer .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-column {
+        margin-bottom: 25px;
+    }
+
+    .footer-column h6 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .footer-description {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer-contact {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .footer-contact p {
+        word-break: break-word;
+    }
+
+    .footer-disclaimer {
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+    .footer-copyright {
+        font-size: 13px;
+        padding: 12px 5px;
+    }
+
+    .footer-social {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .footer-social a {
+        min-width: 90px;
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .footer-social {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .footer-social a {
+        width: 100%;
+        min-width: 0;
+        margin: 0 !important;
+    }
+
+}

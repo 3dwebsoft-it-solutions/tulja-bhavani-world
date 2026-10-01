@@ -6,6 +6,6 @@ public interface AuthService {
 
 	public User loginProcess(String email, String password);
 
-	public String updateUser(User user);
+//	public String updateUser(User user);
 
 }

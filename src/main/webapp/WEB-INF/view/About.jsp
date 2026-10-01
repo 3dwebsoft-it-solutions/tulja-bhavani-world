@@ -25,7 +25,7 @@
 
         <h4>ABOUT</h4>
 
-        <h1>About 3DWebSoft.INC</h1>
+        <h1>Tulja Bhavani World.in</h1>
 
         <h5>Building Strong Foundations with Quality Materials.</h5>
 
@@ -43,6 +43,12 @@
 
             <img src="${pageContext.request.contextPath}/About/work2.jpg"
                  alt="Construction Work">
+                 
+            <img src="${pageContext.request.contextPath}/About/about1.jpg"
+                 alt="Construction Work">
+
+            <img src="${pageContext.request.contextPath}/About/about2.jpg"
+                 alt="Construction Work">    
 
         </div>
 

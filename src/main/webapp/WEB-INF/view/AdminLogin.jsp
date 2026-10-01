@@ -10,11 +10,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>User Login</title>
+<title>Admin Login</title>
 
 <link rel="stylesheet" href="/CSS/admin.css">
-
-<jsp:include page="Menu.jsp"></jsp:include>
 
 </head>
 
@@ -32,7 +30,7 @@
 			<p class="subtitle">Login to your account</p>
 
 			<h3 style="color: red">${msg}</h3>
-			<form action="loginProcess" method="post">
+			<form action="/admin/loginProcess" method="post">
 
 
 				<!-- EMAIL -->

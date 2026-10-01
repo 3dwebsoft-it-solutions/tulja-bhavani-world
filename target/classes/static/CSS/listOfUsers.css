@@ -1,0 +1,356 @@
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7f8;
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   PAGE TITLE
+========================================= */
+
+h2 {
+    text-align: center;
+    margin: 25px 10px;
+    font-size: 28px;
+}
+h3 {
+    width: 90%;
+    max-width: 600px;
+    margin: 5px auto 30px auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: green;
+    text-align: center;
+    background-color: yellow;
+    font-size: 22px;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.success-message {
+    width: 90%;
+    max-width: 1200px;
+    margin: 15px auto;
+    padding: 12px 20px;
+
+    background-color: #d4edda;
+    color: #155724;
+
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+
+    font-weight: bold;
+    text-align: center;
+
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.error-message {
+    width: 90%;
+    max-width: 1200px;
+    margin: 15px auto;
+    padding: 12px 20px;
+
+    background-color: #f8d7da;
+    color: #721c24;
+
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+
+    font-weight: bold;
+    text-align: center;
+
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.table-container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 30px auto;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+table {
+    width: 100%;
+    min-width: 900px;
+
+    border-collapse: collapse;
+
+    border: 2px solid red;
+    background-color: white;
+}
+
+
+/* =========================================
+   TABLE CELLS
+========================================= */
+
+th,
+td {
+    border: 1px solid rgb(191, 191, 191);
+
+    padding: 10px;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+th {
+    background-color: rgb(64, 128, 128);
+    color: white;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   TABLE DATA
+========================================= */
+
+td {
+    font-size: 14px;
+}
+
+
+/* =========================================
+   ACTION COLUMN
+========================================= */
+
+td:last-child {
+    min-width: 150px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    margin: 2px;
+
+    border: none;
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Edit Button */
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+
+/* Delete Button */
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+
+/* =========================================
+   TABLE ROW HOVER
+========================================= */
+
+tbody tr:hover,
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    h3 {
+        width: 92%;
+        font-size: 20px;
+    }
+
+    .success-message,
+    .error-message {
+        width: 92%;
+    }
+
+    .table-container {
+        width: 94%;
+    }
+
+    table {
+        min-width: 850px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+
+
+
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 24px;
+        margin: 20px 10px;
+    }
+
+	 h3 {
+	 	width: 92%;
+        margin: 5px auto 20px auto;
+        font-size: 18px;
+        padding: 12px 10px;
+    }
+
+    
+
+    .success-message,
+    .error-message {
+        width: 92%;
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .table-container {
+        width: 95%;
+        margin: 20px auto;
+
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 850px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h3 {
+        width: 94%;
+        margin: 5px auto 20px auto;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .success-message,
+    .error-message {
+        width: 94%;
+        font-size: 13px;
+        padding: 9px 10px;
+    }
+
+    .table-container {
+        width: 96%;
+        margin-top: 15px;
+    }
+
+    table {
+        min-width: 800px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
+

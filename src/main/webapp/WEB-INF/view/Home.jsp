@@ -32,7 +32,7 @@
 		onmouseover="this.stop()" onmouseout="this.start()">
 
 		<img src="Gallery/home/TBW-Logo.png" class="home-slide-image">
-		&nbsp; <img src="Gallery/home/TBW.png" class="home-slide-image">
+		&nbsp; <img src="Gallery/home/AllKindsOfMaterials.png" class="home-slide-image">
 		&nbsp; <img src="Gallery/home/3BHK.png" class="home-slide-image">
 		&nbsp; <img src="Gallery/home/3Bhk_Plan.png" class="home-slide-image">
 		&nbsp; <img src="Gallery/home/Supply1.png" class="home-slide-image">
@@ -49,7 +49,7 @@
 		</a>
 	</h2>
 
-	<img src="Gallery/home/TBW.png" class="home-main-image">
+	<img src="Gallery/home/weSupply.png" class="home-main-image">
 
 
 </body>

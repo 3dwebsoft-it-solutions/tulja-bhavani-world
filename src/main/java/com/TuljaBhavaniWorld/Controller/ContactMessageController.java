@@ -24,8 +24,8 @@ public class ContactMessageController {
 	@Autowired
 	private ContactMessageService contactMessageService;
 
-	@Autowired
-	private EmailService emailService;
+//	@Autowired
+//	private EmailService emailService;
 
 	@PostMapping("/contactMessage")
 	public String sendContactMessage(@ModelAttribute ContactMessage contactMessage) {
@@ -34,7 +34,7 @@ public class ContactMessageController {
 		ContactMessage savedMessage = contactMessageService.saveMessage(contactMessage);
 
 		// 2. Send message to manager
-		emailService.sendContactMessage(savedMessage);
+		//emailService.sendContactMessage(savedMessage);
 
 		return "redirect:/contactMessage?success=true";
 	}
